@@ -27,7 +27,23 @@ public class Converter {
         System.out.println("180 rubles are " + dollar + " dollars");
         double lira = Converter.euroToLira(450);
         DecimalFormat df1 = new DecimalFormat("#.##");
-        System.out.println("450 euro are " + lira  + " turc lira");
+        System.out.println("450 euro are " +  " " + lira +  " turc lira");
+        int in = 140;
+        int expected = 2;
+        int out =  rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2. Test result : " + passed);
+        int dol = 180;
+        int expectedDol = 60;
+        int outD =  rubleToDollar(in);
+        boolean passedD = expected == out;
+        System.out.println("180 rubles are 3. Test result : " + passed);
+        int eurolira = 450;
+        double expectedlir = 8.7;
+        double outLira = euroToLira(in);
+        boolean passedLira = expected == out;
+        System.out.println("450 euros are 51.7 Test result : " + passed);
+
     }
 }
 
