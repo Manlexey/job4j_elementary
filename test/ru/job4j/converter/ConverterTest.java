@@ -27,8 +27,8 @@ public class ConverterTest {
     @Test
     public void whenConvert450EuroThen51Lira() {
         int in = 450;
-        double expected = 8.7;
-        int out = Converter.rubleToDollar(in);
-        Assert.assertEquals(expected, out);
+        double expected = 51.72;
+        double out = Converter.euroToLira(in);
+        Assert.assertEquals(expected, out, 0.1);
     }
 }
