@@ -8,7 +8,7 @@ public class MultiMaxTest {
 
     @Test
     public void max() {
-        int result = MultiMax.max(1, 4, 2);
+        int result = MultiMax.max(3, 3, 3);
         assertThat(result, is(4));
     }
 }
