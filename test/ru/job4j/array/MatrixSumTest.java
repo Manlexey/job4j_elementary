@@ -32,8 +32,7 @@ public class MatrixSumTest  {
     public void whenThree() {
         int[][] in = {
                 {1, 2, 1},
-                {1, 2, 0},
-                {0, 0, 0}
+                {1, 2, 0}
         };
         int expect = 7;
         int rsl = MatrixSum.sum(in);
